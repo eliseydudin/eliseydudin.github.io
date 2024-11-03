@@ -38,6 +38,7 @@
     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
     const search = window.location.search.replace("?", "").replace("%20", " ");
+    console.log(search);
 
     fetch(
       "https://raw.githubusercontent.com/eliseydudin/github-articles/refs/heads/main/articles-map.json"
