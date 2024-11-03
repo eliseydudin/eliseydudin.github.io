@@ -18,8 +18,11 @@ body {
 
 div#wrapper {
   padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: 25%;
   /*padding: 0;*/
+
+  margin-bottom: 1%;
 }
 
 #header {
@@ -53,4 +56,45 @@ div#wrapper {
 
 #header-hello {
   font-size: 36px;
+}
+
+#articles {
+  margin: 5%;
+
+  padding: 0;
+  height: 200px;
+
+  border-radius: 15px;
+}
+
+#articles > * {
+  margin-top: 10px;
+
+  position: relative;
+  left: 22%;
+
+  height: 160px;
+  width: 56%;
+
+  background-color: rgb(29, 29, 29);
+  border-radius: 15px;
+}
+
+.article > h1 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.article > div {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.article > a {
+  font-size: 20px;
+  position: relative;
+  top: 35px;
+  left: 20px;
 }
