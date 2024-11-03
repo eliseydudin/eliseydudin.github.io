@@ -19,7 +19,6 @@
 
     <link rel="stylesheet" href="code-block-theme.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
   </head>
   <body>
     <div id="article-header-main">
@@ -35,6 +34,8 @@
   </body>
 
   <script type="module">
+    console.log(window.location.search);
+
     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
     document.getElementById("article-members").innerHTML = marked.parse(
       "```js\nconst a = 20;\nconsole.log(a + 30)\n```"
