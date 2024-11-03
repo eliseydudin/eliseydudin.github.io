@@ -78,7 +78,7 @@ div#wrapper {
 
 .article > div {
   position: relative;
-  top: 5%;
+  top: 1%;
   left: 3%;
 }
 
@@ -87,4 +87,32 @@ div#wrapper {
   position: relative;
   top: 35px;
   left: 3%;
+}
+
+/* 404.html */
+#article-header-main {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#article-header {
+  margin-bottom: 5px;
+}
+
+#article-header-metadata {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.divider {
+  margin: 20px;
+}
+
+#article-members {
+  display: block;
+}
+
+#article-members > * {
+  margin-left: 20px;
+  margin-top: 5px;
 }
