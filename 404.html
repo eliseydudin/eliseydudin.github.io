@@ -37,7 +37,10 @@
   <script type="module">
     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
-    const search = window.location.href.replace("?", "").replace("%20", " ");
+    const search = window.location.href.replace(
+      "https://eliseydudin.github.io/",
+      ""
+    );
     console.log(search);
 
     fetch(
