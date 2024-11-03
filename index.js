@@ -12,6 +12,10 @@ const links = [
     text: "also check out webbop!",
     href: "https://www.dempah.com/bigsearch/",
   },
+  {
+    text: "also check out sillycore kittycore!!",
+    href: "https://discord.gg/kittycore-sillycore-1025339762493624350",
+  },
 ];
 
 const el = document.getElementById("header-check-out");
