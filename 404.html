@@ -34,12 +34,45 @@
   </body>
 
   <script type="module">
-    console.log(window.location.search);
-
     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-    document.getElementById("article-members").innerHTML = marked.parse(
-      "```js\nconst a = 20;\nconsole.log(a + 30)\n```"
-    );
+
+    const search = window.location.search.replace("?", "");
+
+    fetch(
+      "https://raw.githubusercontent.com/eliseydudin/github-articles/refs/heads/main/articles-map.json"
+    )
+      .then((resp) => resp.text())
+      .then((text) => {
+        console.log(text);
+        const obj = JSON.parse(text);
+
+        if (Object.keys(obj).length === 0) {
+          return;
+        }
+
+        const articles = obj.articles;
+
+        for (let article of articles) {
+          if (article.title == search) {
+            return article;
+          }
+        }
+
+        throw new EvalError("ummm cant find this article :(");
+      })
+      .then((data) => {
+        document.getElementById("article-header").textContent = data.title;
+        document.getElementById("article-date").textContent = data.data;
+
+        return fetch(data.url);
+      })
+      .then((data) => data.text())
+      .then((data) => {
+        document.getElementById("article-members").innerHTML =
+          marked.parse(data);
+      })
+      .catch((error) => console.error("Error fetching articles:", error));
+
     hljs.highlightAll();
   </script>
 </html>
