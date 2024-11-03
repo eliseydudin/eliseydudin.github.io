@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(43, 43, 43);
+  overscroll-behavior: none;
+}
+
+* {
+  color: white;
+}
+
+#wrapper {
+  width: 50%;
+  background-color: rgb(29, 29, 29);
+  height: full;
+
+  border-radius: 15px;
+}
+
+div#wrapper {
+  padding-top: 5px;
+  margin-left: 25%;
+  /*padding: 0;*/
+}
+
+#header {
+  margin: 5%;
+
+  padding: 0;
+  height: 200px;
+
+  border-radius: 15px;
+  background-color: rgb(43, 43, 43);
+}
+
+#header > * {
+  display: inline-block;
+}
+
+#header-pfp {
+  top: -50%;
+  left: -10%;
+  position: relative;
+
+  border-radius: 50%;
+  scale: 30%;
+}
+
+#header-about {
+  top: -165%;
+  left: 30%;
+  position: relative;
+}
+
+#header-hello {
+  font-size: 36px;
+}
