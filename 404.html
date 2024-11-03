@@ -65,6 +65,7 @@
         throw new EvalError("ummm cant find this article :(");
       })
       .then((data) => {
+        document.title = data.title;
         document.getElementById("article-header").textContent = data.title;
         document.getElementById("article-date").textContent = data.date;
 
