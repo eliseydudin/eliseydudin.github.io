@@ -37,7 +37,7 @@
   <script type="module">
     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 
-    const search = window.location.search.replace("?", "");
+    const search = window.location.search.replace("?", "").replace("%20", " ");
 
     fetch(
       "https://raw.githubusercontent.com/eliseydudin/github-articles/refs/heads/main/articles-map.json"
@@ -54,7 +54,6 @@
         const articles = obj.articles;
 
         for (let article of articles) {
-          article.title = article.title.replace("%20", " ");
           if (article.title == search) {
             return article;
           }
