@@ -26,7 +26,7 @@ div#wrapper {
 }
 
 #header {
-  margin: 5%;
+  margin: 3%;
 
   padding: 0;
   height: 200px;
@@ -35,25 +35,18 @@ div#wrapper {
   background-color: rgb(43, 43, 43);
 
   overflow: hidden;
-}
 
-#header > * {
-  display: inline-block;
+  display: flex;
 }
 
 #header-pfp {
-  top: -50%;
-  left: -10%;
-  position: relative;
-
   border-radius: 50%;
-  scale: 30%;
+  scale: 50%;
+  display: inline-block;
 }
 
 #header-about {
-  top: -165%;
-  left: 30%;
-  position: relative;
+  transform: translateY(35%);
 }
 
 #header-hello {
