@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="code-block-theme.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
   </head>
   <body>
     <div id="article-header-main">
@@ -53,6 +54,7 @@
         const articles = obj.articles;
 
         for (let article of articles) {
+          article.title = article.title.replace("%20", " ");
           if (article.title == search) {
             return article;
           }
