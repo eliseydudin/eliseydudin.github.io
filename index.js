@@ -8,6 +8,10 @@ const links = [
     text: "also check out disa!",
     href: "https://somepeoplecallmedisa.github.io/",
   },
+  {
+    text: "also check out webbop!",
+    href: "https://www.dempah.com/bigsearch/",
+  },
 ];
 
 const el = document.getElementById("header-check-out");
