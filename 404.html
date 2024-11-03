@@ -16,20 +16,29 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="code-block-theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
   </head>
   <body>
     <div id="article-header-main">
       <h1 id="article-header">definetely some cookery going on</h1>
       <div id="article-header-metadata">
         <a href="https://eliseydudin.github.io">homepage</a>
-        <div>published nov 3</div>
+        <div id="article-date">published nov 3</div>
       </div>
     </div>
 
     <hr class="divider" />
-    <div id="article-members">
-      <div>haii</div>
-      <div>hello</div>
-    </div>
+    <div id="article-members"></div>
   </body>
+
+  <script type="module">
+    import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.getElementById("article-members").innerHTML = marked.parse(
+      "```js\nconst a = 20;\nconsole.log(a + 30)\n```"
+    );
+    hljs.highlightAll();
+  </script>
 </html>
