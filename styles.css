@@ -61,22 +61,17 @@ div#wrapper {
 }
 
 #articles {
-  margin: 5%;
-
-  padding: 0;
-  height: 200px;
-
-  border-radius: 15px;
+  display: block;
 }
 
 #articles > * {
   margin-top: 10px;
 
   position: relative;
-  left: 22%;
+  left: 25%;
 
   height: 160px;
-  width: 56%;
+  width: 50%;
 
   background-color: rgb(29, 29, 29);
   border-radius: 15px;
@@ -84,19 +79,19 @@ div#wrapper {
 
 .article > h1 {
   position: relative;
-  top: 20px;
-  left: 20px;
+  top: 10%;
+  left: 3%;
 }
 
 .article > div {
   position: relative;
-  top: 10px;
-  left: 20px;
+  top: 5%;
+  left: 3%;
 }
 
 .article > a {
   font-size: 20px;
   position: relative;
   top: 35px;
-  left: 20px;
+  left: 3%;
 }
