@@ -57,7 +57,7 @@ fetch(
       return;
     }
 
-    const articles = obj.articles;
+    const articles = obj.articles.reverse();
 
     for (let article of articles) {
       create_article(article.title, article.flavour_text);
