@@ -33,6 +33,8 @@ div#wrapper {
 
   border-radius: 15px;
   background-color: rgb(43, 43, 43);
+
+  overflow: hidden;
 }
 
 #header > * {
