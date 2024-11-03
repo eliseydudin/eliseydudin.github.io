@@ -1,9 +1,9 @@
 const links = [
   {
-    text: "also check out luna clippa!", 
-    href: "https://lunaclippa.bandcamp.com/album/shall-we"
+    text: "also check out luna clippa!",
+    href: "https://lunaclippa.bandcamp.com/album/shall-we",
   },
-  {text: "also check out nlo!", href : "https://nlolnlolnlo.neocities.org"}
+  { text: "also check out nlo!", href: "https://nlolnlolnlo.neocities.org" },
 ];
 
 const el = document.getElementById("header-check-out");
