@@ -89,6 +89,20 @@ div#wrapper {
   left: 3%;
 }
 
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  #header {
+    width: 100%;
+  }
+
+  .article > a {
+    top: 10px;
+  }
+}
+
 /* 404.html */
 #article-header-main {
   display: inline-block;
