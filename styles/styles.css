@@ -25,6 +25,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #wrapper {
+    width: 98%;
     margin-left: 1%;
   }
 }
@@ -118,7 +119,11 @@ body {
   }
 
   .article > a {
-    top: 10px;
+    top: 20px;
+  }
+
+  .article > * {
+    left: 10%;
   }
 }
 
