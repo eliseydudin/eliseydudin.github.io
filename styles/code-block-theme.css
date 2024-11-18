@@ -21,6 +21,13 @@ code.hljs {
   border-radius: 15px;
   width: 30%;
 }
+
+@media only screen and (max-width: 768px) {
+  .hljs {
+    width: 60%;
+  }
+}
+
 .hljs-doctag,
 .hljs-keyword,
 .hljs-meta .hljs-keyword,
