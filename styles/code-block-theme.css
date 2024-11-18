@@ -24,7 +24,7 @@ code.hljs {
 
 @media only screen and (max-width: 768px) {
   .hljs {
-    width: 60%;
+    width: 100%;
   }
 }
 
