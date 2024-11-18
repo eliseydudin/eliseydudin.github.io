@@ -32,8 +32,6 @@ body {
 
 #header {
   margin: 3%;
-
-  padding: 0;
   height: 200px;
 
   border-radius: 15px;
@@ -119,7 +117,7 @@ body {
   }
 
   .article > a {
-    top: 20px;
+    top: 30px;
   }
 
   .article > * {
