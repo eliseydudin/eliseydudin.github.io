@@ -49,6 +49,14 @@ body {
   display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+  #header-pfp {
+    object-fit: none;
+    object-position: center top;
+    scale: 25%;
+  }
+}
+
 #header-about {
   transform: translateY(35%);
 }
